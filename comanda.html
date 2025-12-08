@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comanda - Controller</title>
+</head>
+<body>
+    <header>
+        <h1>Comanda - Controller</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="caixa.html">Caixa</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="barra_ferramentas">
+            <a href="home.html">cancelar</a>
+            <a href="salvar_comanda.html">Salvar</a>
+        </div>
+        <div class="area_cliente">
+            <span>Dados Clinte</span>
+            <input type="text" name="nome" id="nome">
+            <input type="number" name="cpf" id="cpf">
+            <hr>
+            <span>Dados Entrega</span>
+            <input type="number" name="cep" id="cep">
+            <input type="text" name="endereco" id="endereco">
+            <input type="text" name="cidade" id="cidade">
+            <input type="number" name="numero" id="numero">
+            <hr>
+            <span>Dados Pedido</span>
+            <select name="consumo" id="consumo">
+                <option value="entrega">Entrega</option>
+                <option value="local">Consumo Local</option>
+                <option value="reitada">Retirada</option>
+            </select>
+            <!-- se consumo local, mostrar -->
+            <select name="mesa" id="mesa">
+                <option value="1">Mesa 1</option>
+                <option value="2">Mesa 2</option>
+                <option value="3">Mesa 3</option>
+                <option value="4">Mesa 4</option>
+                <option value="5">Mesa 5</option>
+                <option value="balcao">balcao</option>
+            </select>
+            <!-- se entrega, mostrar -->
+            <input type="checkbox" name="entregadores" id="entregadores" checked>
+            <label for="entregadores">Gustavo/Gabriel</label>
+        </div>
+
+        <div class="comanda">
+            <div class="produto">
+                <span class="quantidade_produto">1</span>
+                <span class="nome_produto">Lanche Kids</span>
+                <span class="observacoes_produto">Combo</span>
+                <span class="preco_produto">R$ 19,90</span>
+                <div class="opcoes_produto">
+                    <a href="#">+</a>
+                    <a href="#">-</a>
+                    <a href="#">personalizar</a>
+                </div>
+            </div>
+        </div>        
+
+        <div class="area_pedido">
+            <input type="search" name="buscar_produtos" id="buscar_produtos">
+            <button>Pesquisar</button>
+            <div class="resultado_produtos">
+                <!-- produtos pesquisados aparecerao aqui -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>
