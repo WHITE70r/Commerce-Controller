@@ -1,0 +1,18 @@
+main{
+    width: 100%;
+    height: calc(100dvh - 120px);
+}
+.area_cliente{
+    width: 25%;
+    background: #f00;
+}
+
+.comanda{
+    width: 50%;
+    background: #0f0;
+}
+
+.area_pedido{
+    width: 25%;
+    background: #00f;
+}
