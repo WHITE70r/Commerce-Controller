@@ -11,6 +11,15 @@ header{
     text-align: center;
 }
 
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    
+}
+
 main{
     width: 100%;
     height: calc(100dvh - 120);
