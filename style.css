@@ -12,12 +12,15 @@ header{
 }
 
 nav ul{
+    width: 100%;
     display: flex;
     list-style: none;
+    justify-content: space-around;
 }
 
 nav ul li {
-    
+    width: 150px;
+    height: 30px;
 }
 
 main{
