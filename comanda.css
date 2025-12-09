@@ -2,18 +2,22 @@ main{
     width: 100%;
     height: calc(100dvh - 120px);
     display: flex;
+    position: relative;
 }
 .area_cliente{
     width: 25%;
+    height: 100%;
     background: #f00;
 }
 
 .comanda{
     width: 50%;
+    height: 100%;
     background: #0f0;
 }
 
 .area_pedido{
     width: 25%;
+    height: 100%;
     background: #00f;
 }
