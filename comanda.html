@@ -25,22 +25,25 @@
     <main>
         <div class="area_cliente">
             <span>Dados Clinte</span>
-            <input type="text" name="nome" id="nome">
-            <input type="number" name="cpf" id="cpf">
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <input type="number" name="cpf" id="cpf" placeholder="CPF">
             <hr>
             <span>Dados Entrega</span>
-            <input type="number" name="cep" id="cep">
-            <input type="text" name="endereco" id="endereco">
-            <input type="text" name="cidade" id="cidade">
-            <input type="number" name="numero" id="numero">
+            <input type="number" name="cep" id="cep" placeholder="CEP">
+            <input type="text" name="endereco" id="endereco" placeholder="Endereco">
+            <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+            <input type="text" name="uf" id="uf" placeholder="UF">
+            <input type="number" name="numero" id="numero" placeholder="Numero">
             <hr>
             <span>Dados Pedido</span>
+            <label for="consumo">Consumo:</label>
             <select name="consumo" id="consumo">
                 <option value="entrega">Entrega</option>
-                <option value="local">Consumo Local</option>
+                <option value="local">Local</option>
                 <option value="reitada">Retirada</option>
             </select>
             <!-- se consumo local, mostrar -->
+            <label for="mesa">Mesa:</label>
             <select name="mesa" id="mesa">
                 <option value="1">Mesa 1</option>
                 <option value="2">Mesa 2</option>
@@ -69,7 +72,7 @@
         </div>        
 
         <div class="area_pedido">
-            <input type="search" name="buscar_produtos" id="buscar_produtos">
+            <input type="search" name="buscar_produtos" id="buscar_produtos" placeholder="Pesquisar produto">
             <button>Pesquisar</button>
             <div class="resultado_produtos">
                 <!-- produtos pesquisados aparecerao aqui -->
