@@ -1,20 +1,18 @@
 main{
     display: flex;
+    height: calc(100dvh - 120px);
 }
 .area_cliente{
     width: 25%;
-    height: calc(100dvh - 120px);
-    background: #f00;
+    background: #ddd;
 }
 
 .comanda{
     width: 50%;
-    height: calc(100dvh - 120px);
-    background: #0f0;
+    background: #eee;
 }
 
 .area_pedido{
     width: 25%;
-    height: calc(100dvh - 120px);
-    background: #00f;
+    background: #ddd;
 }
